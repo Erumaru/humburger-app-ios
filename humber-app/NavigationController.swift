@@ -31,7 +31,7 @@ class NavigationController: UINavigationController {
     }
     
     @objc private func openMenu() {
-        present(SideMenuManager.default.leftMenuNavigationController!, animated: true)
+        present(HumburgerMenuNavigationController.shared, animated: true)
     }
 }
 

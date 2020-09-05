@@ -1,80 +1,51 @@
 //
-//  HumburgerMenuNavigationController.swift
+//  HumberMenuNavigationController.swift
 //  humber-app
 //
 //  Created by Abzal Toremuratuly on 9/5/20.
 //  Copyright © 2020 Abzal Toremuratuly. All rights reserved.
 //
 
-import UIKit
-import SnapKit
+import SideMenu
 
-class HumburgerMenuNavigationController: UIViewController {
-    lazy var redButton: UIButton = {
-        let button = UIButton()
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
-        button.setTitleColor(.red, for: .normal)
-        button.setTitle("RED", for: .normal)
-        button.addTarget(self, action: #selector(changeRoot(_:)), for: .touchUpInside)
-        button.tag = 0
+class HumburgerMenuNavigationController: SideMenuNavigationController {
+    static var shared = HumburgerMenuNavigationController(rootViewController: HumburgerMenuViewController())
+    var maskView: UIView?
+    
+    override init(rootViewController: UIViewController, settings: SideMenuSettings = SideMenuSettings()) {
+        super.init(rootViewController: rootViewController, settings: settings)
         
-        return button
-    }()
+        presentationStyle = .menuSlideIn
+        menuWidth = UIScreen.main.bounds.width * 0.8
+        leftSide = true
+        sideMenuDelegate = self
+    }
     
-    lazy var greenButton: UIButton = {
-        let button = UIButton()
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .bold)
-        button.setTitleColor(.green, for: .normal)
-        button.setTitle("GREEN", for: .normal)
-        button.addTarget(self, action: #selector(changeRoot(_:)), for: .touchUpInside)
-        button.tag = 1
-        
-        return button
-    }()
-    
-    lazy var firstVC: TabBarController = {
-        let vc = TabBarController(color: .red)
-        return vc
-    }()
-    
-    lazy var secondVC: TabBarController = {
-        let vc = TabBarController(color: .green)
-        return vc
-    }()
-    
-    public lazy var viewControllers: [UIViewController] = [
-        self.firstVC, self.secondVC
-    ]
-    
-    @objc private func changeRoot(_ button: UIButton) {
-        print("change to vc: \(button.tag)")
-        self.dismiss(animated: true) { [weak self] in
-            guard let self = self else { return }
-            UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController = self.viewControllers[button.tag]
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension HumburgerMenuNavigationController: SideMenuNavigationControllerDelegate {
+    func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
+        guard let topView = presentingViewController?.view else { return }
+        let view = UIView()
+        view.backgroundColor = .red
+        view.alpha = 0
+        view.frame = topView.bounds
+        maskView = view
+        topView.addSubview(view)
+        UIView.animate(withDuration: 0.3) {
+            view.alpha = 0.5
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        markup()
-    }
-    
-    private func markup() {
-        view.backgroundColor = .blue
-        
-        [redButton, greenButton].forEach { view.addSubview($0) }
-        
-        redButton.snp.makeConstraints {
-            $0.top.equalTo(view.snp.topMargin)
-            $0.left.right.equalToSuperview()
-            $0.height.equalTo(48)
-        }
-        
-        greenButton.snp.makeConstraints {
-            $0.top.equalTo(redButton.snp.bottom)
-            $0.left.right.equalToSuperview()
-            $0.height.equalTo(48)
+    func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.maskView?.alpha = 0
+        }) { _ in
+            self.maskView?.removeFromSuperview()
+            self.maskView = nil
         }
     }
 }

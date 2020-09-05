@@ -16,9 +16,11 @@
 		57A5F01F2503836E0024F35B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A5F01D2503836E0024F35B /* LaunchScreen.storyboard */; };
 		57A5F02A2503836E0024F35B /* humber_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0292503836E0024F35B /* humber_appTests.swift */; };
 		57A5F0352503836F0024F35B /* humber_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0342503836F0024F35B /* humber_appUITests.swift */; };
-		57A5F0432503843E0024F35B /* HumburgerMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0422503843E0024F35B /* HumburgerMenuNavigationController.swift */; };
+		57A5F0432503843E0024F35B /* HumburgerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0422503843E0024F35B /* HumburgerMenuViewController.swift */; };
 		57A5F0452503859F0024F35B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0442503859F0024F35B /* TabBarController.swift */; };
 		57A5F047250388520024F35B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F046250388520024F35B /* NavigationController.swift */; };
+		57A5F0492503A7510024F35B /* HamburgerMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0482503A7510024F35B /* HamburgerMenuPresentationStyle.swift */; };
+		57A5F04B2503A99C0024F35B /* HumburgerMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F04A2503A99C0024F35B /* HumburgerMenuNavigationController.swift */; };
 		81CFE10A1A10D55D4850F15B /* Pods_humber_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5184AF7F9E3D1E95FCBBD0BF /* Pods_humber_appTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,9 +56,11 @@
 		57A5F0302503836F0024F35B /* humber-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "humber-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A5F0342503836F0024F35B /* humber_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = humber_appUITests.swift; sourceTree = "<group>"; };
 		57A5F0362503836F0024F35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57A5F0422503843E0024F35B /* HumburgerMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumburgerMenuNavigationController.swift; sourceTree = "<group>"; };
+		57A5F0422503843E0024F35B /* HumburgerMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumburgerMenuViewController.swift; sourceTree = "<group>"; };
 		57A5F0442503859F0024F35B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		57A5F046250388520024F35B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		57A5F0482503A7510024F35B /* HamburgerMenuPresentationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerMenuPresentationStyle.swift; sourceTree = "<group>"; };
+		57A5F04A2503A99C0024F35B /* HumburgerMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumburgerMenuNavigationController.swift; sourceTree = "<group>"; };
 		7208B3340F918E5CCC647AF5 /* Pods_humber_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_humber_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84284FED414CEE1547388214 /* Pods-humber-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humber-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-humber-appTests/Pods-humber-appTests.debug.xcconfig"; sourceTree = "<group>"; };
 		926DD65D9066E84B870026E7 /* Pods_humber_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_humber_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,9 +143,11 @@
 				57A5F01B2503836E0024F35B /* Assets.xcassets */,
 				57A5F01D2503836E0024F35B /* LaunchScreen.storyboard */,
 				57A5F0202503836E0024F35B /* Info.plist */,
-				57A5F0422503843E0024F35B /* HumburgerMenuNavigationController.swift */,
+				57A5F0422503843E0024F35B /* HumburgerMenuViewController.swift */,
 				57A5F0442503859F0024F35B /* TabBarController.swift */,
 				57A5F046250388520024F35B /* NavigationController.swift */,
+				57A5F0482503A7510024F35B /* HamburgerMenuPresentationStyle.swift */,
+				57A5F04A2503A99C0024F35B /* HumburgerMenuNavigationController.swift */,
 			);
 			path = "humber-app";
 			sourceTree = "<group>";
@@ -401,8 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57A5F0432503843E0024F35B /* HumburgerMenuNavigationController.swift in Sources */,
+				57A5F0432503843E0024F35B /* HumburgerMenuViewController.swift in Sources */,
+				57A5F0492503A7510024F35B /* HamburgerMenuPresentationStyle.swift in Sources */,
 				57A5F047250388520024F35B /* NavigationController.swift in Sources */,
+				57A5F04B2503A99C0024F35B /* HumburgerMenuNavigationController.swift in Sources */,
 				57A5F017250383660024F35B /* ViewController.swift in Sources */,
 				57A5F013250383660024F35B /* AppDelegate.swift in Sources */,
 				57A5F0452503859F0024F35B /* TabBarController.swift in Sources */,

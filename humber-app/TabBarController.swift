@@ -28,6 +28,7 @@ class TabBarController: UITabBarController {
     init(color: UIColor = .red) {
         super.init(nibName: nil, bundle: nil)
         tabBar.tintColor = color
+        modalPresentationCapturesStatusBarAppearance = true
         
         viewControllers = [
             NavigationController(rootViewController: firstVC),
