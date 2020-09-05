@@ -12,9 +12,28 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .purple
     }
-
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.rightBarButtonItems = [
+            .init(title: "Add", style: .plain, target: self, action: #selector(addVC)),
+            .init(title: "Present", style: .plain, target: self, action: #selector(presentVC))
+        ]
+    }
+    
+    @objc private func addVC() {
+        let vc = ViewController()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func presentVC() {
+        let vc = ViewController()
+        present(vc, animated: true)
+    }
 }
 

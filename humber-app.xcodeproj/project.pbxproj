@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B9DC6990ABFF60C4BB0091F /* Pods_humber_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926DD65D9066E84B870026E7 /* Pods_humber_app.framework */; };
+		21A82E89BBCAB0B90846572B /* Pods_humber_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7208B3340F918E5CCC647AF5 /* Pods_humber_appUITests.framework */; };
 		57A5F013250383660024F35B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F012250383660024F35B /* AppDelegate.swift */; };
 		57A5F015250383660024F35B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F014250383660024F35B /* SceneDelegate.swift */; };
 		57A5F017250383660024F35B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F016250383660024F35B /* ViewController.swift */; };
-		57A5F01A250383660024F35B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A5F018250383660024F35B /* Main.storyboard */; };
 		57A5F01C2503836E0024F35B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A5F01B2503836E0024F35B /* Assets.xcassets */; };
 		57A5F01F2503836E0024F35B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A5F01D2503836E0024F35B /* LaunchScreen.storyboard */; };
 		57A5F02A2503836E0024F35B /* humber_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0292503836E0024F35B /* humber_appTests.swift */; };
 		57A5F0352503836F0024F35B /* humber_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0342503836F0024F35B /* humber_appUITests.swift */; };
+		57A5F0432503843E0024F35B /* HumburgerMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0422503843E0024F35B /* HumburgerMenuNavigationController.swift */; };
+		57A5F0452503859F0024F35B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F0442503859F0024F35B /* TabBarController.swift */; };
+		57A5F047250388520024F35B /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A5F046250388520024F35B /* NavigationController.swift */; };
+		81CFE10A1A10D55D4850F15B /* Pods_humber_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5184AF7F9E3D1E95FCBBD0BF /* Pods_humber_appTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5184AF7F9E3D1E95FCBBD0BF /* Pods_humber_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_humber_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A5F00F250383660024F35B /* humber-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "humber-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A5F012250383660024F35B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57A5F014250383660024F35B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		57A5F016250383660024F35B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		57A5F019250383660024F35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57A5F01B2503836E0024F35B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57A5F01E2503836E0024F35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57A5F0202503836E0024F35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,17 @@
 		57A5F0302503836F0024F35B /* humber-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "humber-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A5F0342503836F0024F35B /* humber_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = humber_appUITests.swift; sourceTree = "<group>"; };
 		57A5F0362503836F0024F35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57A5F0422503843E0024F35B /* HumburgerMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumburgerMenuNavigationController.swift; sourceTree = "<group>"; };
+		57A5F0442503859F0024F35B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		57A5F046250388520024F35B /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		7208B3340F918E5CCC647AF5 /* Pods_humber_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_humber_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84284FED414CEE1547388214 /* Pods-humber-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humber-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-humber-appTests/Pods-humber-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		926DD65D9066E84B870026E7 /* Pods_humber_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_humber_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E3B9B5D65E24DFF156BF59 /* Pods-humber-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humber-appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-humber-appUITests/Pods-humber-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C510F6C07E5965B11C7DDCAE /* Pods-humber-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humber-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-humber-appTests/Pods-humber-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE17B328E9E9A14CCAACF1D9 /* Pods-humber-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humber-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-humber-app/Pods-humber-app.release.xcconfig"; sourceTree = "<group>"; };
+		E52CF677487872A88597215D /* Pods-humber-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humber-appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-humber-appUITests/Pods-humber-appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5D17B7E756166ACAF06EBCC /* Pods-humber-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humber-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-humber-app/Pods-humber-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9DC6990ABFF60C4BB0091F /* Pods_humber_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CFE10A1A10D55D4850F15B /* Pods_humber_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A82E89BBCAB0B90846572B /* Pods_humber_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020C452F58E9378F2B11771E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5D17B7E756166ACAF06EBCC /* Pods-humber-app.debug.xcconfig */,
+				CE17B328E9E9A14CCAACF1D9 /* Pods-humber-app.release.xcconfig */,
+				84284FED414CEE1547388214 /* Pods-humber-appTests.debug.xcconfig */,
+				C510F6C07E5965B11C7DDCAE /* Pods-humber-appTests.release.xcconfig */,
+				A4E3B9B5D65E24DFF156BF59 /* Pods-humber-appUITests.debug.xcconfig */,
+				E52CF677487872A88597215D /* Pods-humber-appUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		57A5F006250383660024F35B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				57A5F0282503836E0024F35B /* humber-appTests */,
 				57A5F0332503836F0024F35B /* humber-appUITests */,
 				57A5F010250383660024F35B /* Products */,
+				020C452F58E9378F2B11771E /* Pods */,
+				7D4A09C36AC5358699180961 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +136,12 @@
 				57A5F012250383660024F35B /* AppDelegate.swift */,
 				57A5F014250383660024F35B /* SceneDelegate.swift */,
 				57A5F016250383660024F35B /* ViewController.swift */,
-				57A5F018250383660024F35B /* Main.storyboard */,
 				57A5F01B2503836E0024F35B /* Assets.xcassets */,
 				57A5F01D2503836E0024F35B /* LaunchScreen.storyboard */,
 				57A5F0202503836E0024F35B /* Info.plist */,
+				57A5F0422503843E0024F35B /* HumburgerMenuNavigationController.swift */,
+				57A5F0442503859F0024F35B /* TabBarController.swift */,
+				57A5F046250388520024F35B /* NavigationController.swift */,
 			);
 			path = "humber-app";
 			sourceTree = "<group>";
@@ -128,6 +164,16 @@
 			path = "humber-appUITests";
 			sourceTree = "<group>";
 		};
+		7D4A09C36AC5358699180961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				926DD65D9066E84B870026E7 /* Pods_humber_app.framework */,
+				5184AF7F9E3D1E95FCBBD0BF /* Pods_humber_appTests.framework */,
+				7208B3340F918E5CCC647AF5 /* Pods_humber_appUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57A5F0392503836F0024F35B /* Build configuration list for PBXNativeTarget "humber-app" */;
 			buildPhases = (
+				28F5A21753C02283531268DC /* [CP] Check Pods Manifest.lock */,
 				57A5F00B250383660024F35B /* Sources */,
 				57A5F00C250383660024F35B /* Frameworks */,
 				57A5F00D250383660024F35B /* Resources */,
+				647D98B9CF06F850F85DC8DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57A5F03C2503836F0024F35B /* Build configuration list for PBXNativeTarget "humber-appTests" */;
 			buildPhases = (
+				791DD6874576E7BD6BE83FD8 /* [CP] Check Pods Manifest.lock */,
 				57A5F0212503836E0024F35B /* Sources */,
 				57A5F0222503836E0024F35B /* Frameworks */,
 				57A5F0232503836E0024F35B /* Resources */,
@@ -170,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57A5F03F2503836F0024F35B /* Build configuration list for PBXNativeTarget "humber-appUITests" */;
 			buildPhases = (
+				247EADAB4EB5377BD72E92B0 /* [CP] Check Pods Manifest.lock */,
 				57A5F02C2503836F0024F35B /* Sources */,
 				57A5F02D2503836F0024F35B /* Frameworks */,
 				57A5F02E2503836F0024F35B /* Resources */,
@@ -234,7 +284,6 @@
 			files = (
 				57A5F01F2503836E0024F35B /* LaunchScreen.storyboard in Resources */,
 				57A5F01C2503836E0024F35B /* Assets.xcassets in Resources */,
-				57A5F01A250383660024F35B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +303,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		247EADAB4EB5377BD72E92B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-humber-appUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28F5A21753C02283531268DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-humber-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		647D98B9CF06F850F85DC8DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-humber-app/Pods-humber-app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-humber-app/Pods-humber-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		791DD6874576E7BD6BE83FD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-humber-appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		57A5F00B250383660024F35B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A5F0432503843E0024F35B /* HumburgerMenuNavigationController.swift in Sources */,
+				57A5F047250388520024F35B /* NavigationController.swift in Sources */,
 				57A5F017250383660024F35B /* ViewController.swift in Sources */,
 				57A5F013250383660024F35B /* AppDelegate.swift in Sources */,
+				57A5F0452503859F0024F35B /* TabBarController.swift in Sources */,
 				57A5F015250383660024F35B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +442,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		57A5F018250383660024F35B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57A5F019250383660024F35B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		57A5F01D2503836E0024F35B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +569,7 @@
 		};
 		57A5F03A2503836F0024F35B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D17B7E756166ACAF06EBCC /* Pods-humber-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +588,7 @@
 		};
 		57A5F03B2503836F0024F35B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE17B328E9E9A14CCAACF1D9 /* Pods-humber-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +607,7 @@
 		};
 		57A5F03D2503836F0024F35B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84284FED414CEE1547388214 /* Pods-humber-appTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +630,7 @@
 		};
 		57A5F03E2503836F0024F35B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C510F6C07E5965B11C7DDCAE /* Pods-humber-appTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +653,7 @@
 		};
 		57A5F0402503836F0024F35B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4E3B9B5D65E24DFF156BF59 /* Pods-humber-appUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +674,7 @@
 		};
 		57A5F0412503836F0024F35B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52CF677487872A88597215D /* Pods-humber-appUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
