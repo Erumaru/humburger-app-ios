@@ -10,6 +10,15 @@ import UIKit
 import SideMenu
 
 class NavigationController: UINavigationController {
+    override init(rootViewController: UIViewController) {
+        super.init(rootViewController: rootViewController)
+        SideMenuManager.default.addPanGestureToPresent(toView: view)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateMenuVisibility()
